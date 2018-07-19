@@ -103,7 +103,7 @@ public class StatusBar extends CordovaPlugin {
                     // use KitKat here to be aligned with "Fullscreen"  preference
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                         int uiOptions = window.getDecorView().getSystemUiVisibility();
-                        if (this.transparent) {
+                        if (StatusBar.this.transparent) {
                             uiOptions |= View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
                         } else {
                             uiOptions &= ~View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
